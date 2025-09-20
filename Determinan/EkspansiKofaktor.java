@@ -30,7 +30,7 @@ public class EkspansiKofaktor {
             return;
         }
 
-        System.out.println("\nMatriks:");
+        System.out.println("\n\nMatriks:");
         OutputMatriks.print(matriks);
         
         double Hasil = HitungDeterminan(matriks);
@@ -55,7 +55,9 @@ public class EkspansiKofaktor {
                 double[][] minor = Minor(matrix, 0, i);
                 double kali = 1.0;
                 if (i % 2 == 1) kali *= (-1.0);
-                total += kali * HitungDeterminan(minor) * matrix[0][i];
+                double res = kali * HitungDeterminan(minor) * matrix[0][i];
+                total += res;
+                // System.out.printf("Determinan Matriks Minor [0][%d] = %.3f\n", i, res);
             }
             return total;
         }

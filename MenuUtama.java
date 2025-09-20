@@ -9,7 +9,7 @@ import java.util.Scanner;
 import Determinan.EkspansiKofaktor;
 // import Determinan.ReduksiBaris;
 
-// import InversMatriks.MetodeAdjoin;
+import InversMatriks.MetodeAdjoin;
 // import InversMatriks.MetodeAugment;
 
 // import Interpolasi.Polinomial;
@@ -89,7 +89,7 @@ public class MenuUtama {
 
         switch (m) {
             // case 1: MetodeAugment.run(); break;
-            // case 2: MetodeAdjoin.run(); break;
+            case 2: MetodeAdjoin.run(); break;
             default: System.out.println("Pilihan tidak valid!");
         }
     }
