@@ -6,7 +6,7 @@ import java.util.Scanner;
 // import SistemPersamaanLinier.KaidahCramer;
 // import SistemPersamaanLinier.MetodeMatriksBalikan;
 
-// import Determinan.EkspansiKofaktor;
+import Determinan.EkspansiKofaktor;
 // import Determinan.ReduksiBaris;
 
 // import InversMatriks.MetodeAdjoin;
@@ -73,7 +73,7 @@ public class MenuUtama {
         int m = sc.nextInt();
 
         switch (m) {
-            // case 1: EkspansiKofaktor.run(); break;
+            case 1: EkspansiKofaktor.run(); break;
             // case 2: ReduksiBaris.run(); break;
             default: System.out.println("Pilihan tidak valid!");
         }
