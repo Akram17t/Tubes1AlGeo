@@ -3,7 +3,7 @@ import java.util.Scanner;
 // import semua modul
 // import SistemPersamaanLinier.EliminasiGauss;
 // import SistemPersamaanLinier.EliminasiGaussJordan;
-// import SistemPersamaanLinier.KaidahCramer;
+import SistemPersamaanLinier.KaidahCramer;
 // import SistemPersamaanLinier.MetodeMatriksBalikan;
 
 import Determinan.EkspansiKofaktor;
@@ -23,7 +23,7 @@ public class MenuUtama {
         int pilih;
 
         do {
-            System.out.println("=== MENU UTAMA ===");
+            System.out.println("\n\n\n=== MENU UTAMA ===");
             System.out.println("1. Sistem Persamaan Linier");
             System.out.println("2. Determinan Matriks");
             System.out.println("3. Matriks Balikan");
@@ -59,7 +59,7 @@ public class MenuUtama {
         switch (m) {
             // case 1: EliminasiGauss.run(); break;
             // case 2: EliminasiGaussJordan.run(); break;
-            // case 3: KaidahCramer.run(); break;
+            case 3: KaidahCramer.run(); break;
             // case 4: MetodeMatriksBalikan.run(); break;
             default: System.out.println("Pilihan tidak valid!");
         }
